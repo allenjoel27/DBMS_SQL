@@ -1,0 +1,51 @@
+mysql> use student;
+Database changed
+mysql> create table mentees(Regno int(10),Name varchar(20),Dept varchar(4),Address varchar(10),Fathername varchar(10));
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into mentees values(192111238,"Ram","CSE","Vellore","Kumar");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into mentees values(192111239,"David","AIDS","Madurai","Madan");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into mentees values(192111240,"Malik","EEE","Erode","Basah");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into mentees values(192111241,"Joel","AIML","Chennai","Vasanth");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into mentees values(192111242,"Priya","AIML","Chennai","Ramesh");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select*from mentees;
++-----------+---------+------+---------+------------+
+| Regno     | Name    | Dept | Address | Fathername |
++-----------+---------+------+---------+------------+
+| 192110168 | Ram      | CSE  | Vellore | Kumar      |
+| 192111239 | David    | AIDS | Madurai | Madan      |
+| 192111240 | Malik    | EEE  | Erode   | Basah      |
+| 192111241 | Joel     | AIML | Chennai | Vasanth    |
+| 192111242 | Priya    | AIML | Chennai | Ramesh     |
++-----------+---------+------+---------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select Name from mentees;
++---------+
+| Name    |
++---------+
+| Ram     |
+| David   |
+| Malik   |
+| Joel    |
+| Priya   |
++---------+
+5 rows in set (0.00 sec)
+
+mysql> select*from mentees where Name="manasa";
++-----------+---------+------+---------+------------+
+| Regno     | Name    | Dept | Address | Fathername |
++-----------+---------+------+---------+------------+
+| 192110168 | Ram     | CSE  | Vellore | Kumar      |
++-----------+---------+------+---------+------------+
+1 row in set (0.00 sec)
